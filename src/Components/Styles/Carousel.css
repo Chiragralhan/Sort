@@ -1,0 +1,47 @@
+.carousel-image { 
+    height: 85vh; /* Set a fixed height for consistency */
+    object-fit: cover; /* Ensures the image covers the entire area without stretching */
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Take full width of the image */
+    height: 100%; /* Take full height of the image */
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for better visibility */
+    display: flex; /* Use Flexbox to center content */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+@media (max-width: 768px) {
+    #header-carousel .carousel-item {
+        position: relative;
+        min-height: 450px;
+    }
+    
+    #header-carousel .carousel-item img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+
+.breadcrumb-item + .breadcrumb-item::before {
+    color: var(--light);
+}
